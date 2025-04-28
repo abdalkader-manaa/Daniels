@@ -1,0 +1,108 @@
+@media(max-width:1159px)
+{
+    .container
+    {
+        width: 90% !important;
+    }
+}
+@media(max-width:1007px)
+{
+    .container
+    {
+        width: 95% !important;
+    }
+}
+@media(max-width:992px)
+{
+    .textAboutsection{
+        padding-top: 15px;
+    }
+}
+@media(max-width:989px)
+{
+    .container
+    {
+        width: 95% !important;
+    }
+    .contact .row
+{
+    width: 100%;
+    margin: auto;
+}
+ul.navbar-nav li
+{
+    width: 22%;
+    text-align: center;
+    margin: auto;
+    padding-top: 27px;
+}
+ul.navbar-nav li a
+{
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+ul.navbar-nav>li>a::after
+{
+    left: -300px;
+}
+.boxClients
+{
+    padding-top: 10px;
+}
+.text-header
+{
+    z-index: 1;
+    margin-top: 40%;
+}
+}
+@media(max-width:812px)
+{
+    .textHero p
+{
+    font-size: 40px;
+    font-weight: 200;
+}
+}
+@media(max-width:760px)
+{
+    .text-header
+{
+    z-index: 1;
+    margin-top: 55%;
+}
+}
+@media(max-width:493px)
+{
+    .text-header
+{
+    z-index: 1;
+    margin-top: 75%;
+}
+.textHero p
+{
+    font-size: 30px;
+    font-weight: 200;
+}
+ul.navbar-nav li
+{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding-top: 27px;
+}
+}
+@media(max-width:376px)
+{
+    ul.listPort li
+{
+    margin: 0 10px;
+}
+ul.navbar-nav li
+{
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    padding-top: 27px;
+}
+}

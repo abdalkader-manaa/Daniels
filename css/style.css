@@ -1,0 +1,693 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #fff;
+}
+.container {
+  width: 77% !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* start style navbar */
+
+nav {
+  padding-top: 20px !important;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar h3 {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar h3 a {
+  text-decoration: none;
+}
+
+/* start style list */
+
+ul.navbar-nav li a {
+  font-size: 14.5px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+ul.navbar-nav li {
+  padding: 0 19px;
+  position: relative;
+  display: block;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: transparent !important;
+}
+ul.navbar-nav > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s 0.2s linear;
+  -webkit-transition: 0.3s 0.2s linear;
+  -moz-transition: 0.3s 0.2s linear;
+  -ms-transition: 0.3s 0.2s linear;
+  -o-transition: 0.3s 0.2s linear;
+}
+ul.navbar-nav li a.active::after,
+ul.navbar-nav li a:hover::after {
+  left: 0px;
+}
+/* start style header  */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imgs/bg.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.66;
+  z-index: 0;
+}
+.text-header {
+  z-index: 1;
+  margin-top: 25%;
+}
+.title-head h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+.textHero p {
+  font-size: 55px;
+  font-weight: 200;
+}
+.textHero p a {
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.mediaIcon {
+  padding-top: 20px;
+}
+.mediaIcon a {
+  width: 35px;
+  height: 35px;
+  background-color: #0000005d;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.mediaIcon a svg {
+  font-size: 14px;
+}
+
+/* about section */
+.aboutSection {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.image-about {
+  padding: 0 0 33px 30px;
+  position: relative;
+}
+.image-about img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.image-about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 75%;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.titleAbout h2 {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 30px;
+}
+.titleAbout p {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.textAbout p {
+  font-size: 15px;
+  color: #748182;
+  font-weight: 500;
+  padding-top: 7px;
+}
+.textAbout p span {
+  font-weight: 700;
+}
+.progressAbout {
+  padding-top: 0px;
+}
+.progress {
+  margin-top: 30px !important;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.progress-bar {
+  border-radius: 0 5px 5px 0px;
+  -webkit-border-radius: 0 5px 5px 0px;
+  -moz-border-radius: 0 5px 5px 0px;
+  -ms-border-radius: 0 5px 5px 0px;
+  -o-border-radius: 0 5px 5px 0px;
+}
+.bold-txt {
+  font-weight: 500;
+}
+.btnsAbout .btnAbout {
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+}
+.btnsAbout .btnAbout a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+  padding: 11px 30px;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+}
+.btnsAbout .bttn1about a {
+  color: #eee;
+}
+.btnsAbout .bttn1about:hover {
+  background-color: transparent !important;
+  color: #343434 !important;
+}
+.btnsAbout .bttn1about a:hover {
+  color: #000 !important;
+}
+.btnsAbout .btnAbout:nth-child(2) a {
+  color: #000;
+}
+.btnsAbout .btnAbout:nth-child(2):hover {
+  background-color: #1c1c1c;
+}
+.btnsAbout .btnAbout:nth-child(2) a:hover {
+  color: #ddd;
+}
+
+/* start section services */
+.servicesSec {
+  background-color: #f7f7f7;
+  padding-top: 100px !important;
+  padding-bottom: 100px;
+}
+.title {
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+.title h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  font-weight: 900;
+  z-index: 11;
+  color: #343434;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.boxServ {
+  background-color: #fff;
+  padding: 50px 20px;
+  margin-top: 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.iconServ {
+  width: 70px;
+  height: 70px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.boxServ:hover .iconServ {
+  background-color: #1c1c1c;
+  color: #f7f7f7;
+}
+.iconServ svg {
+  font-size: 25px;
+}
+.boxServ h3 {
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 15px;
+}
+.boxServ p {
+  font-size: 14px;
+  color: #748182;
+}
+
+/* start section .portfolio */
+ul.listPort {
+  list-style: none;
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+ul.listPort li {
+  margin: 0 17px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+}
+ul.listPort li a {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+ul.listPort li a.nav-link {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+}
+ul.listPort li a.active {
+  border-bottom: 3px solid #1c1c1c !important;
+}
+.boxPort {
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.boxPort .overlayPort {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(10);
+  -webkit-transform: translateY(10);
+  -moz-transform: translateY(10);
+  -ms-transform: translateY(10);
+  -o-transform: translateY(10);
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.boxPort:hover .overlayPort {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.textBoxPort {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textBoxPort h6 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+  transition: 0.5s linear;
+}
+.boxPort:hover .overlayPort .textBoxPort h6 {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.iconPort {
+  justify-content: center;
+  margin: 10px 0px;
+  transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  -o-transform: translateY(15px);
+  transition: 0.5s linear;
+}
+.textBoxPort a {
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #1c1c1c;
+  color: #eee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 2px;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.textBoxPort a svg {
+  font-size: 15px;
+}
+.textBoxPort a:hover {
+  background-color: transparent;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+.boxPort:hover .overlayPort .iconPort {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+/* start style section teams */
+.work {
+  background-color: #f7f7f7;
+  padding-top: 80px !important;
+  padding-bottom: 120px;
+}
+.work .title::after {
+  width: 77%;
+}
+.carousel-item img {
+  width: 90px;
+}
+.carousel-item p {
+  width: 95%;
+  font-size: 16px;
+  margin: auto;
+  color: #748182;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.carousel-item h6 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.carousel-item span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #748182;
+}
+.carousel-indicators {
+  bottom: -70px !important;
+}
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  background-color: #d5d5d5 !important;
+  margin: 0 7px !important;
+}
+.carousel-indicators button.active {
+  background-color: #869791 !important;
+}
+
+/* start section works */
+.boxClients svg {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.boxClients h2 {
+  font-weight: 900;
+}
+.boxClients p {
+  font-size: 15px;
+  color: #748182;
+  font-weight: 600;
+}
+
+/* start section teams */
+.teams {
+  background-color: #f7f7f7;
+  padding-top: 90px !important;
+  padding-bottom: 100px !important;
+}
+.boxTeam {
+  background-color: #5b5b5b;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -ms-border-radius: 7px 7px 7px 7px;
+  -o-border-radius: 7px 7px 7px 7px;
+  width: 100%;
+}
+.boxTeam .imgTeam {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.boxTeam img {
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.boxTeam .imgTeam:hover > img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.boxTeam .iconTeams {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  opacity: 0;
+  inset: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+}
+.boxTeam .iconTeams a {
+  margin: 0 10px;
+  background-color: #1c1c1c;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 2.5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #1c1c1c;
+}
+.boxTeam .iconTeams a:hover {
+  background-color: transparent;
+  color: #1c1c1c;
+}
+.boxTeam:hover .iconTeams {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.textBoxTeam h4 {
+  font-size: 25px;
+  padding-top: 17px;
+}
+.textBoxTeam h5 {
+  font-weight: 700;
+  padding-bottom: 17px;
+}
+
+/* start section contact */
+.contact .row {
+  width: 90%;
+  margin: auto;
+}
+.box-contact .iconContact {
+  width: 60px;
+  height: 60px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.box-contact:hover .iconContact {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.box-contact .iconContact svg {
+  font-size: 25px;
+  font-weight: 200;
+}
+.box-contact h4 {
+  font-size: 17px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.box-contact p {
+  font-size: 15px;
+  color: #748182;
+  font-weight: 500;
+}
+.contactForm form input {
+  border: none !important;
+  outline: none !important;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.contactForm form textarea {
+  border: none !important;
+  outline: none !important;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+form button {
+  padding: 7px 35px !important;
+}
+form button:hover {
+  background-color: transparent !important;
+  color: #1c1c1c !important;
+}
+
+/* start footer */
+footer p {
+  color: #748182;
+  font-size: 13px;
+  word-spacing: 15;
+  font-weight: 500;
+}
